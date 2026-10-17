@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Медведівський ліцей - концепт нового сайту</title>
+<meta name="description" content="Концепт-макет нового сайту Комунальний заклад «Медведівський ліцей» Кегичівської селищної ради Харківської області. Не є офіційним сайтом закладу.">
+<meta property="og:title" content="Медведівський ліцей - концепт нового сайту">
+<meta property="og:description" content="Як може виглядати сучасний сайт ліцею">
+<meta property="og:image" content="img/src/03.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14213d;--ink2:#3b4a6b;--muted:#6b7690;--bg:#f7f4ee;--card:#fff;--line:#e7e1d6;--blue:#1f4fd1;--blue2:#e8eefc;--yellow:#ffc928;--yellow2:#fff4cf;--red:#c8102e;--red2:#fde8eb;--green:#1e8a4c;--green2:#e3f4ea;--amber:#b86e00;--amber2:#fff0d9;--r:22px;--shadow:0 10px 30px rgba(20,33,61,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);font-size:17px;line-height:1.6}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.concept{background:var(--ink);color:#fff;font-size:13.5px;text-align:center;padding:8px 16px}.concept b{color:var(--yellow)}
+header{position:sticky;top:0;z-index:50;background:rgba(247,244,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.hd{display:flex;align-items:center;gap:18px;height:74px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.mark{width:46px;height:46px;border-radius:14px;background:var(--blue);color:#fff;display:grid;place-items:center;font:800 17px Unbounded;position:relative;overflow:hidden}.mark:after{content:"";position:absolute;inset:auto 0 0 0;height:30%;background:var(--yellow)}.mark span{position:relative;z-index:1;margin-top:-8px}
+.logo b{font:700 16px/1.15 Unbounded;display:block}.logo small{color:var(--muted);font-size:12.5px}
+nav.main{margin-left:auto;display:flex;gap:4px}nav.main a{text-decoration:none;font-weight:600;font-size:15px;padding:9px 13px;border-radius:12px}nav.main a:hover{background:#fff}
+.hd-act{display:flex;gap:8px}.btn{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:14px;padding:11px 18px;font:700 15px Manrope;cursor:pointer;text-decoration:none}
+.btn-y{background:var(--yellow);color:var(--ink)}.btn-w{background:#fff;color:var(--ink);border:1px solid var(--line)}.btn-b{background:var(--blue);color:#fff}
+.a11y{width:44px;height:44px;padding:0;justify-content:center;font-size:19px}
+.burger{display:none}
+/* hero */
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:99px;padding:6px 14px 6px 8px;font-weight:700;font-size:14px}.eyebrow i{width:22px;height:22px;border-radius:50%;background:linear-gradient(var(--blue) 50%,var(--yellow) 50%)}
+h1{font:800 clamp(38px,5.6vw,68px)/1.02 Unbounded;margin:18px 0 18px;letter-spacing:-.02em}h1 em{font-style:normal;color:var(--blue);position:relative;white-space:nowrap}h1 em:after{content:"";position:absolute;left:0;right:0;bottom:.06em;height:.22em;background:var(--yellow);z-index:-1;border-radius:4px}
+.lead{font-size:19.5px;color:var(--ink2);max-width:560px;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+.stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px 16px}.stat b{font:800 28px Unbounded;display:block;line-height:1.1}.stat span{font-size:13.5px;color:var(--muted);font-weight:600}
+.collage{position:relative;height:520px}
+.ph{position:absolute;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px rgba(20,33,61,.18);border:6px solid #fff;background:#ddd}.ph img{width:100%;height:100%;object-fit:cover;image-rendering:auto}
+.ph1{width:62%;height:56%;left:0;top:4%;transform:rotate(-3deg)}.ph2{width:52%;height:46%;right:0;top:0;transform:rotate(4deg)}.ph3{width:58%;height:48%;right:6%;bottom:0;transform:rotate(-1.5deg)}
+.sticker{position:absolute;left:4%;bottom:6%;background:var(--red);color:#fff;border-radius:18px;padding:14px 18px;font:700 15px/1.3 Manrope;transform:rotate(-4deg);box-shadow:var(--shadow);max-width:210px}.sticker b{font:800 22px Unbounded;display:block}
+.orn{position:absolute;right:-60px;top:-60px;width:260px;height:260px;opacity:.07;background:repeating-linear-gradient(45deg,var(--red) 0 10px,transparent 10px 20px),repeating-linear-gradient(-45deg,var(--red) 0 10px,transparent 10px 20px);border-radius:50%}
+/* quick */
+section{padding:56px 0}.sec-h{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:26px}
+h2{font:800 clamp(28px,3.4vw,40px)/1.1 Unbounded;margin:0;letter-spacing:-.01em}.sec-h p{margin:6px 0 0;color:var(--muted)}
+.quick{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:-6px}
+.q{background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px 16px;text-decoration:none;transition:.2s;display:flex;flex-direction:column;gap:12px;min-height:138px}.q:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:transparent}
+.q i{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-style:normal;font-size:22px}.q b{font-size:15.5px;line-height:1.3}
+/* news */
+.news{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-auto-rows:auto;gap:18px}
+.news-card{background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.2s}.news-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.news-main{grid-row:span 2}.news-img{height:260px}.news-img img{width:100%;height:100%;object-fit:cover}
+.news-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:8px;flex:1}.news-body h3{font:700 19px/1.3 Manrope;margin:2px 0}.news-main h3{font:700 24px/1.25 Unbounded}.news-body p{margin:0;color:var(--ink2);font-size:15.5px}
+.news-meta{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.date{font-size:14px;color:var(--muted)}.date b{color:var(--ink);font-size:16px}
+.tag{font-size:12.5px;font-weight:700;padding:4px 10px;border-radius:99px}.tag-red{background:var(--red2);color:var(--red)}.tag-blue{background:var(--blue2);color:var(--blue)}.tag-amber{background:var(--amber2);color:var(--amber)}.tag-green{background:var(--green2);color:var(--green)}
+.more{margin-top:auto;font-weight:700;color:var(--blue);text-decoration:none;padding-top:8px}
+/* about */
+.about{background:var(--ink);color:#fff;border-radius:36px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:56px;position:relative;overflow:hidden}
+.about h2{color:#fff}.about p{color:#c9d2e8}
+.timeline{list-style:none;padding:0;margin:26px 0 0;border-left:2px solid rgba(255,255,255,.18)}.timeline li{position:relative;padding:0 0 18px 26px}.timeline li:before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--yellow)}.timeline b{font:800 20px Unbounded;color:var(--yellow);display:block}.timeline span{color:#dfe5f3}
+.team{display:grid;gap:14px;align-content:start}
+.person{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px 20px;display:flex;gap:16px;align-items:center}
+.ava{width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;font:800 19px Unbounded;color:var(--ink)}
+.person b{display:block;font-size:17px}.person span{color:#b8c3dc;font-size:14.5px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:6px}.mini div{background:rgba(255,255,255,.07);border-radius:16px;padding:14px}.mini b{font:800 24px Unbounded;color:#fff;display:block}.mini span{font-size:13px;color:#b8c3dc}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px;grid-auto-flow:dense}
+.gal button{border:0;padding:0;border-radius:20px;overflow:hidden;cursor:zoom-in;background:#ddd}.gal img{width:100%;height:100%;object-fit:cover;transition:.4s}.gal button:hover img{transform:scale(1.06)}
+.gal .w2{grid-column:span 2}.gal .h2{grid-row:span 2}
+.lb{position:fixed;inset:0;background:rgba(10,16,32,.9);display:none;place-items:center;z-index:99;padding:20px}.lb.on{display:grid}.lb img{max-height:86vh;border-radius:16px;min-width:min(90vw,720px);object-fit:contain}
+/* transparency */
+.tr-box{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.tr-info{position:sticky;top:100px;background:var(--yellow2);border-radius:28px;padding:30px}.tr-info p{color:var(--ink2)}
+.search{width:100%;padding:14px 18px;border-radius:14px;border:1px solid var(--line);font:600 16px Manrope;background:#fff;margin-bottom:14px}
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.doc{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:13px 14px;text-decoration:none;font-weight:600;font-size:15px;line-height:1.3;transition:.15s}.doc:hover{border-color:var(--blue);color:var(--blue)}
+.doc-ic{width:36px;height:36px;border-radius:11px;background:var(--blue2);color:var(--blue);display:grid;place-items:center;font-weight:800;flex:none}.doc-go{margin-left:auto;color:var(--muted)}
+/* parents */
+.par{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.pc{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:26px}.pc h3{font:700 20px Unbounded;margin:10px 0 8px}.pc p{color:var(--ink2);margin:0 0 14px;font-size:15.5px}.pc .em{font-size:30px}
+.pc a{font-weight:700;color:var(--blue);text-decoration:none}
+/* contacts */
+.ct{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.ct-card{background:#fff;border:1px solid var(--line);border-radius:28px;padding:32px}
+.ct-row{display:flex;gap:14px;padding:14px 0;border-bottom:1px dashed var(--line)}.ct-row:last-of-type{border:0}.ct-row i{font-style:normal;width:42px;height:42px;border-radius:12px;background:var(--blue2);display:grid;place-items:center;flex:none}.ct-row small{color:var(--muted);display:block;font-size:13px}.ct-row b{font-size:17px}
+.map{border-radius:28px;overflow:hidden;border:1px solid var(--line);min-height:380px}.map iframe{width:100%;height:100%;min-height:380px;border:0}
+footer{background:var(--ink);color:#c9d2e8;padding:40px 0;margin-top:40px;font-size:14.5px}footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer b{color:#fff}
+/* a11y mode */
+body.big{font-size:21px}body.big .lead{font-size:23px}body.hc{--bg:#fff;--card:#fff;--ink:#000;--ink2:#000;--muted:#222;--line:#000;--blue:#0033cc}body.hc .about,body.hc footer,body.hc .concept{background:#000}body.hc img{filter:grayscale(1) contrast(1.1)}
+.a11y-panel{position:fixed;right:16px;top:150px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);display:none;z-index:60;gap:8px;flex-direction:column}.a11y-panel.on{display:flex}
+@media (max-width:1000px){.hero-grid,.about,.tr-box,.ct{grid-template-columns:1fr}.collage{height:400px}.quick{grid-template-columns:repeat(3,1fr)}.news{grid-template-columns:1fr 1fr}.news-main{grid-column:span 2;grid-row:auto}.par{grid-template-columns:1fr}.tr-info{position:static}nav.main{display:none}.burger{display:inline-flex}nav.main.open{display:flex;position:absolute;top:74px;left:0;right:0;flex-direction:column;background:var(--bg);padding:10px 20px 20px;border-bottom:1px solid var(--line)}.about{padding:34px 24px}}
+@media (max-width:620px){body{font-size:16px}.stats{grid-template-columns:repeat(2,1fr)}.quick{grid-template-columns:repeat(2,1fr)}.news{grid-template-columns:1fr}.news-main{grid-column:auto}.gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}.docs{grid-template-columns:1fr}.hd-act .btn-y{display:none}.logo small{display:none}.collage{height:320px}.sticker{display:none}section{padding:40px 0}.mini{grid-template-columns:1fr 1fr 1fr}.wrap{padding:0 16px}}
+</style>
+</head>
+<body>
+<div class="concept">Концепт-макет нового сайту, підготовлений для обговорення. <b>Не є офіційним сайтом закладу.</b> Офіційний сайт: <a href="http://medvedivka-lyceum.kh.sch.in.ua" target="_blank" rel="noopener">medvedivka-lyceum.kh.sch.in.ua</a></div>
+<header><div class="wrap hd">
+  <a class="logo" href="#top"><div class="mark"><span>МЛ</span></div><div><b>Медведівський ліцей</b><small>Кегичівська селищна рада</small></div></a>
+  <nav class="main" id="nav"><a href="#news">Новини</a><a href="#about">Про ліцей</a><a href="#parents">Батькам</a><a href="#st30">Прозорість</a><a href="#contacts">Контакти</a></nav>
+  <div class="hd-act"><button class="btn btn-w a11y" id="a11yBtn" aria-label="Версія для людей з порушенням зору" title="Для людей з порушенням зору">👁</button><a class="btn btn-y" href="tel:+380999655373">Зателефонувати</a><button class="btn btn-w a11y burger" aria-label="Меню" onclick="document.getElementById('nav').classList.toggle('open')">☰</button></div>
+</div></header>
+<div class="a11y-panel" id="a11y"><b>Доступність</b><button class="btn btn-w" onclick="document.body.classList.toggle('big')">Збільшити шрифт</button><button class="btn btn-w" onclick="document.body.classList.toggle('hc')">Висока контрастність</button></div>
+
+<main id="top">
+<section class="hero"><div class="orn"></div><div class="wrap hero-grid">
+  <div>
+    <span class="eyebrow"><i></i>с. Медведівка · над річкою Берестова</span>
+    <h1>Школа, де <em>знають</em> кожного учня</h1>
+    <p class="lead">111 учнів, 10 класів і 20 педагогів. Ліцей у Медведівці вчить дітей з 1912 року - тут святкують у вишиванках, ходять у походи й пам’ятають своїх героїв.</p>
+    <div class="cta"><a class="btn btn-b" href="#news">Новини ліцею</a><a class="btn btn-w" href="#parents">Вступ до 1 класу</a></div>
+    <div class="stats"><div class="stat"><b>1912</b><span>рік заснування</span></div><div class="stat"><b>111</b><span>учнів</span></div><div class="stat"><b>10</b><span>класів</span></div><div class="stat"><b>20</b><span>педагогів</span></div></div>
+  </div>
+  <div class="collage">
+    <div class="ph ph1"><img src="img/src/07.jpg" alt="Учні ліцею з прапором України"></div>
+    <div class="ph ph2"><img src="img/src/02.jpg" alt="Першокласники у вишиванках"></div>
+    <div class="ph ph3"><img src="img/src/09.jpg" alt="Свято в ліцеї"></div>
+    <div class="sticker"><b>114 років</b>історії школи над Берестовою</div>
+  </div>
+</div></section>
+
+<div class="wrap"><div class="quick">
+<a class="q" href="#parents"><i style="background:#e8eefc">🕘</i><b>Режим роботи і дзвінки</b></a>
+<a class="q" href="#parents"><i style="background:#e3f4ea">🍲</i><b>Харчування</b></a>
+<a class="q" href="#parents"><i style="background:#fff4cf">🎒</i><b>Вступ до 1 класу</b></a>
+<a class="q" href="#st30"><i style="background:#fde8eb">📑</i><b>Документи ст. 30</b></a>
+<a class="q" href="#parents"><i style="background:#e8eefc">🎓</i><b>НМТ-2026</b></a>
+<a class="q" href="#parents"><i style="background:#fff0d9">💬</i><b>Психологічна підтримка</b></a>
+</div></div>
+
+<section id="news"><div class="wrap">
+  <div class="sec-h"><div><h2>Життя ліцею</h2><p>Останні події - так, як їх бачать батьки з телефона</p></div><a class="btn btn-w" href="http://medvedivka-lyceum.kh.sch.in.ua/news/" target="_blank" rel="noopener">Усі новини</a></div>
+  <div class="news"><article class="news-card news-main" tabindex="0">
+  <div class="news-img"><img src="img/src/07.jpg" alt="" loading="lazy"></div>
+  <div class="news-body">
+    <div class="news-meta"><span class="date"><b>1</b> жовтня</span><span class="tag tag-red">Пам’ять і патріотизм</span></div>
+    <h3>День захисників і захисниць України</h3>
+    <p>До Дня захисників і захисниць України класними керівниками КЗ «Медведівський ліцей» — Світланою ДЕНИСЮК, Оленою АВРАМЕНКО та Наталією ЄРМОЛЕНКО — проведено тематичні години спілкування. Під час зустрічей учні говорили про мужність, відвагу та незламність наших…</p>
+    <a class="more" href="http://medvedivka-lyceum.kh.sch.in.ua/news/id/783/vn/%D0%94%D0%B5%D0%BD%D1%8C-%D0%B7%D0%B0%D1%85%D0%B8%D1%81%D0%BD%D0%B8%D0%BA%D1%96%D0%B2-%D1%96-%D0%B7%D0%B0%D1%85%D0%B8%D1%81%D0%BD%D0%B8%D1%86%D1%8C-%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%B8/" target="_blank" rel="noopener">Читати повністю →</a>
+  </div>
+</article>
+<article class="news-card" tabindex="0">
+  
+  <div class="news-body">
+    <div class="news-meta"><span class="date"><b>1</b> жовтня</span><span class="tag tag-red">Пам’ять і патріотизм</span></div>
+    <h3>День українського козацтва</h3>
+    <p>Сьогодні ми разом із шестикласниками вирушили у незвичайну мандрівку — просто… на лезі козацької шаблі! Разом із юним джурою Марком учні поб…</p>
+    <a class="more" href="http://medvedivka-lyceum.kh.sch.in.ua/news/id/782/vn/%D0%94%D0%B5%D0%BD%D1%8C-%D1%83%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%BE%D0%B3%D0%BE-%D0%BA%D0%BE%D0%B7%D0%B0%D1%86%D1%82%D0%B0/" target="_blank" rel="noopener">Читати повністю →</a>
+  </div>
+</article>
+<article class="news-card" tabindex="0">
+  
+  <div class="news-body">
+    <div class="news-meta"><span class="date"><b>30</b> вересня</span><span class="tag tag-red">Пам’ять і патріотизм</span></div>
+    <h3>Роковини трагедії в Бабиному Яру</h3>
+    <p>Пам'ятаємо та вшановуємо. До роковин трагедії в Бабиному Яру(29–30 вересня) на уроці історії України в11 класі (учитель історії - Яна ЧЕХУТА…</p>
+    <a class="more" href="http://medvedivka-lyceum.kh.sch.in.ua/news/id/784/vn/%D0%A0%D0%BE%D0%BA%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8-%D1%82%D1%80%D0%B0%D0%B3%D0%B5%D0%B4%D1%96%D1%97-%D0%B2-%D0%91%D0%B0%D0%B1%D0%B8%D0%BD%D0%BE%D0%BC%D1%83-%D0%AF%D1%80%D1%83/" target="_blank" rel="noopener">Читати повністю →</a>
+  </div>
+</article>
+<article class="news-card" tabindex="0">
+  
+  <div class="news-body">
+    <div class="news-meta"><span class="date"><b>21</b> вересня</span><span class="tag tag-blue">День миру</span></div>
+    <h3>Мир — це мрія, яку сьогодні розуміємо особливо глибоко.</h3>
+    <p>Дитячі малюнки, голуби миру, щирі слова й маленькі добрі справи нагадують нам про найцінніше — можливість жити, навчатися, мріяти та обіймат…</p>
+    <a class="more" href="http://medvedivka-lyceum.kh.sch.in.ua/news/id/776/vn/%D0%9C%D0%B8%D1%80-%E2%80%94-%D1%86%D0%B5-%D0%BC%D1%80%D1%96%D1%8F-%D1%8F%D0%BA%D1%83-%D1%81%D1%8C%D0%BE%D0%B3%D0%BE%D0%B4%D0%BD%D1%96-%D1%80%D0%BE%D0%B7%D1%83%D0%BC%D1%96%D1%94%D0%BC%D0%BE-%D0%BE%D1%81%D0%BE%D0%B1%D0%BB%D0%B8%D0%B2%D0%BE-%D0%B3%D0%BB%D0%B8%D0%B1%D0%BE%D0%BA%D0%BE/" target="_blank" rel="noopener">Читати повністю →</a>
+  </div>
+</article>
+<article class="news-card" tabindex="0">
+  
+  <div class="news-body">
+    <div class="news-meta"><span class="date"><b>21</b> вересня</span><span class="tag tag-blue">День миру</span></div>
+    <h3>21 вересня — Міжнародний день миру.</h3>
+    <p>Мир — це те, про що мріє кожна дитина: прокидатися без тривог, навчатися, сміятися, обіймати рідних і будувати своє майбутнє під мирним небо…</p>
+    <a class="more" href="http://medvedivka-lyceum.kh.sch.in.ua/news/id/775/vn/21-%D0%B2%D0%B5%D1%80%D0%B5%D1%81%D0%BD%D1%8F-%E2%80%94-%D0%9C%D1%96%D0%B6%D0%BD%D0%B0%D1%80%D0%BE%D0%B4%D0%BD%D0%B8%D0%B9-%D0%B4%D0%B5%D0%BD%D1%8C-%D0%BC%D0%B8%D1%80%D1%83/" target="_blank" rel="noopener">Читати повністю →</a>
+  </div>
+</article></div>
+</div></section>
+
+<section id="about"><div class="wrap"><div class="about">
+  <div>
+    <h2>Про ліцей</h2>
+    <p>Медведівський ліцей - опорна школа для дітей Медведівки й сусідніх сіл. Навчання - українською, у старших класах - профіль української філології.</p>
+    <ul class="timeline"><li><b>1912</b><span>Засновано школу в Медведівці</span></li><li><b>1971</b><span>Збудовано нове приміщення середньої школи</span></li><li><b>1997</b><span>Загальноосвітня школа І-ІІІ ступенів</span></li><li><b>2021</b><span>Комунальний заклад «Медведівський ліцей»</span></li></ul>
+  </div>
+  <div class="team">
+    <div class="person"><div class="ava" style="background:#ffc928">НС</div><div><b>Середа Наталія Олексіївна</b><span>Директор</span></div></div><div class="person"><div class="ava" style="background:#9fc0ff">ІД</div><div><b>Дудка Інна Петрівна</b><span>Заступник директора з навчально-виховної роботи</span></div></div><div class="person"><div class="ava" style="background:#9fe0b8">ІК</div><div><b>Коробка Ігор Валерійович</b><span>Заступник директора з виховної роботи</span></div></div>
+    <div class="mini"><div><b>34</b><span>працівники</span></div><div><b>320</b><span>місць у закладі</span></div><div><b>12</b><span>випускників у 2027</span></div></div>
+  </div>
+</div></div></section>
+
+<section id="gallery"><div class="wrap">
+  <div class="sec-h"><div><h2>Фотогалерея</h2><p>Свята, походи, перший дзвоник</p></div></div>
+  <div class="gal"><button class="w2" data-src="img/src/03.jpg"><img src="img/src/03.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/02.jpg"><img src="img/src/02.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class=" h2" data-src="img/src/07.jpg"><img src="img/src/07.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/01.jpg"><img src="img/src/01.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/04.jpg"><img src="img/src/04.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/06.jpg"><img src="img/src/06.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="w2" data-src="img/src/05.jpg"><img src="img/src/05.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/08.jpg"><img src="img/src/08.jpg" alt="Фото з життя ліцею" loading="lazy"></button><button class="" data-src="img/src/09.jpg"><img src="img/src/09.jpg" alt="Фото з життя ліцею" loading="lazy"></button></div>
+</div></section>
+
+<section id="parents"><div class="wrap">
+  <div class="sec-h"><div><h2>Батькам і учням</h2><p>Найпотрібніше - в один дотик</p></div></div>
+  <div class="par"><div class="pc"><div class="em">🎒</div><h3>Майбутнім першокласникам</h3><p>Як записати дитину, які документи потрібні, коли зустріч з батьками.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/uchnyam/batjkam_majbutnih_pershoklasnikiv/" target="_blank" rel="noopener">Детальніше →</a></div><div class="pc"><div class="em">🕘</div><h3>Режим роботи</h3><p>Розклад дзвінків, початок занять, канікули і структура навчального року.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/uchnyam/rezhim_roboti_rozklad_dzvinkiv/" target="_blank" rel="noopener">Детальніше →</a></div><div class="pc"><div class="em">🍲</div><h3>Харчування</h3><p>Організація харчування в ліцеї та поради щодо здорового харчування дітей.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/organizaciya_osvitnjogo_procesu/organizaciya_harchuvannya/" target="_blank" rel="noopener">Детальніше →</a></div><div class="pc"><div class="em">🎓</div><h3>НМТ і вступ</h3><p>Підготовка до національного мультипредметного тесту та вступна кампанія.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/uchnyam/nmt_zno-2025/" target="_blank" rel="noopener">Детальніше →</a></div><div class="pc"><div class="em">💬</div><h3>Психологічна підтримка</h3><p>Куди звернутися дитині чи батькам, якщо потрібна допомога.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/uchnyam/psihologichna_pidtrimka/" target="_blank" rel="noopener">Детальніше →</a></div><div class="pc"><div class="em">💻</div><h3>Дистанційне навчання</h3><p>Як навчаємося онлайн під час тривог і в разі потреби.</p><a href="http://medvedivka-lyceum.kh.sch.in.ua/uchnyam/distancijna_osvita/" target="_blank" rel="noopener">Детальніше →</a></div></div>
+</div></section>
+
+<section id="st30"><div class="wrap tr-box">
+  <div class="tr-info"><h2>Прозорість та інформаційна відкритість</h2><p>Усі документи за статтею 30 Закону України «Про освіту» - в одному місці, з пошуком. Перевірка знаходить потрібне за секунди.</p><p><b>25 розділів</b> · оновлюється без програміста</p></div>
+  <div><input class="search" id="docSearch" placeholder="Знайти документ: статут, кошторис, ліцензія…" aria-label="Пошук документа"><div class="docs" id="docs"><a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/publichna_informaciya/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Публічна інформація</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/navchaljnij_plan/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Навчальний план</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/osvitni_programi/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Освітні програми</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/richnij_plan/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Річний план</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/statut/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Статут</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/organi_upravlinnya_zakladu/" target="_blank" rel="noopener"><span class="doc-ic">◎</span><span>Органи управління закладу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/kadrovij_sklad_zakladu/" target="_blank" rel="noopener"><span class="doc-ic">◎</span><span>Кадровий склад закладу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/shtatnij_rozpis/" target="_blank" rel="noopener"><span class="doc-ic">◎</span><span>Штатний розпис</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/teritoriya_obslugovuvannya/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Рішення про закріплення території обслуговування та зарахування учнів до 1 класу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/licenziya_na_osvitnyu_diyaljnistj/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Ліцензія на освітню діяльність</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/_mova_osvitnjogo_procesu/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span> Мова освітнього процесу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/nayavnistj_vakantnih_posad/" target="_blank" rel="noopener"><span class="doc-ic">◎</span><span>Наявність вакантних посад</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/finansovo-gospodarsjka_zvitnistj/" target="_blank" rel="noopener"><span class="doc-ic">₴</span><span>Фінансово-господарська звітність</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/pravila_prijomu_do_zakladu/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Правила прийому до закладу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/yedini_vimogi_do_zdobuvachiv_osviti/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Єдині вимоги до здобувачів освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/rezuljtati_monitoringu_yakosti_osviti/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Результати моніторингу якості освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/licenzovanij_obsyag_ta_faktichna_kiljkistj_osib_yaki_navchayutjsya_u_zakladi/" target="_blank" rel="noopener"><span class="doc-ic">§</span><span>Ліцензований обсяг та фактична кількість осіб, які навчаються у закладі</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/materialjno-tehnichne_zabezpechennya_zakladu_osviti/" target="_blank" rel="noopener"><span class="doc-ic">!</span><span>Матеріально-технічне забезпечення закладу освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/umovi_dostupnosti_zakladu/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Умови доступності закладу</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/koshtoris/" target="_blank" rel="noopener"><span class="doc-ic">₴</span><span>Кошторис</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/richnij_zvit_kerivnika/" target="_blank" rel="noopener"><span class="doc-ic">₴</span><span>Звіт про діяльність закладу освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/protidiya_bulingu_cjkuvannyu_v_zakladi_osviti/" target="_blank" rel="noopener"><span class="doc-ic">!</span><span>Протидія булінгу (цькуванню) в закладі освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/zapobigannya_nasiljstvu_v_zakladi_osviti/" target="_blank" rel="noopener"><span class="doc-ic">!</span><span>Запобігання насильству в закладі освіти</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/bezpechnij_internet_kiberbezpeka/" target="_blank" rel="noopener"><span class="doc-ic">!</span><span>БЕЗПЕЧНИЙ ІНТЕРНЕТ. КІБЕРБЕЗПЕКА</span><span class="doc-go">→</span></a>
+<a class="doc" href="http://medvedivka-lyceum.kh.sch.in.ua/prozoristj_ta_informacijna_vidkritistj_zakladu_osviti_st_30/perelik_dodatkovih_osvitnih_poslug/" target="_blank" rel="noopener"><span class="doc-ic">▤</span><span>Перелік додаткових освітніх послуг</span><span class="doc-go">→</span></a></div></div>
+</div></section>
+
+<section id="contacts"><div class="wrap">
+  <div class="sec-h"><div><h2>Контакти</h2><p>Будемо раді вас бачити</p></div></div>
+  <div class="ct">
+    <div class="ct-card">
+      <div class="ct-row"><i>📍</i><div><small>Адреса</small><b>64011, с. Медведівка, вул. Шкільна, 11, Берестинський р-н, Харківська обл.</b></div></div>
+      <div class="ct-row"><i>📞</i><div><small>Телефон</small><b><a href="tel:+380999655373">099 965 53 73</a></b></div></div>
+      <div class="ct-row"><i>✉️</i><div><small>Електронна пошта</small><b><a href="mailto:medvsh_2015@ukr.net">medvsh_2015@ukr.net</a></b></div></div>
+      <div class="ct-row"><i>👩‍💼</i><div><small>Директор</small><b>Середа Наталія Олексіївна</b></div></div>
+    </div>
+    <div class="map"><iframe title="Карта" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=35.815,49.462,35.862,49.482&layer=mapnik&marker=49.4721,35.8388"></iframe></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap"><div><b>Комунальний заклад «Медведівський ліцей» Кегичівської селищної ради Харківської області</b><br>64011, с. Медведівка, вул. Шкільна, 11, Берестинський р-н, Харківська обл.</div><div>Концепт-макет · не є офіційним сайтом закладу<br>Розробка: Микола Несвітій · +380 99 269 4742</div></div></footer>
+<div class="lb" id="lb" onclick="this.classList.remove('on')"><img id="lbImg" alt=""></div>
+<script>
+document.getElementById('a11yBtn').onclick=()=>document.getElementById('a11y').classList.toggle('on');
+document.querySelectorAll('.gal button').forEach(b=>b.onclick=()=>{lbImg.src=b.dataset.src;lb.classList.add('on')});
+docSearch.oninput=e=>{const q=e.target.value.toLowerCase();document.querySelectorAll('.doc').forEach(d=>d.style.display=d.innerText.toLowerCase().includes(q)?'':'none')};
+document.querySelectorAll('#nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
+</script>
+</body></html>
