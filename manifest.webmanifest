@@ -1,0 +1,16 @@
+{
+ "name": "Медведівський ліцей",
+ "short_name": "Медведівський",
+ "start_url": "./",
+ "display": "standalone",
+ "background_color": "#f7f4ec",
+ "theme_color": "#1f4e79",
+ "lang": "uk",
+ "icons": [
+  {
+   "src": "img/src/03.jpg",
+   "sizes": "290x217",
+   "type": "image/jpeg"
+  }
+ ]
+}
